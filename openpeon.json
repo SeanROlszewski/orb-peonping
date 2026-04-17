@@ -1,0 +1,57 @@
+{
+  "cesp_version": "1.0",
+  "name": "orb-ping",
+  "display_name": "Orb Ping",
+  "version": "1.0.1",
+  "description": "A peonping pack using sounds from Tools for Humanity's Orb.",
+  "author": {
+    "name": "Seán Olszewski",
+    "github": "SeanROlszewski"
+  },
+  "license": "fair-use",
+  "language": "en",
+  "categories": {
+    "session.start": {
+      "sounds": [
+        { "file": "sounds/sound_bootup.wav", "label": "Orb online. Proof-of-personhood engaged." }
+      ]
+    },
+    "session.end": {
+      "sounds": [
+        { "file": "sounds/sound_powering_down.wav", "label": "Powering down. Stay human." }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        { "file": "sounds/sound_iris_scan_success.wav", "label": "Iris verified. You are human." },
+        { "file": "sounds/sound_qr_load_success.wav", "label": "QR payload ingested." },
+        { "file": "sounds/sound_signup_success.wav", "label": "Welcome to verified humanity." },
+        { "file": "sounds/sound_user_start_capture.wav", "label": "Capture locked in." },
+        { "file": "sounds/sound_internet_connection_successful.wav", "label": "Uplink established." }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        { "file": "sounds/sound_error.wav", "label": "Verification failed. Please retry." },
+        { "file": "sounds/sound_overheating.wav", "label": "Orb overheating. Cooling cycle engaged." }
+      ]
+    },
+    "task.progress": {
+      "sounds": [
+        { "file": "sounds/sound_iris_scanning_loop_01A.wav", "label": "Scanning iris..." },
+        { "file": "sounds/sound_iris_scanning_loop_01B.wav", "label": "Pattern matching..." },
+        { "file": "sounds/sound_iris_scanning_loop_02A.wav", "label": "Cross-referencing humanity..." },
+        { "file": "sounds/sound_iris_scanning_loop_02B.wav", "label": "Running proof-of-personhood..." },
+        { "file": "sounds/sound_iris_scanning_loop_03A.wav", "label": "Deep scan in progress..." },
+        { "file": "sounds/sound_iris_scanning_loop_03B.wav", "label": "Finalizing biometric handshake..." }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        { "file": "sounds/sound_qr_code_capture.wav", "label": "Present your QR code." },
+        { "file": "sounds/sound_start_idle.wav", "label": "Awaiting your gaze." },
+        { "file": "sounds/sound_start_signup.wav", "label": "Step up to the Orb." }
+      ]
+    }
+  }
+}
