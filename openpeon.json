@@ -2,7 +2,7 @@
   "cesp_version": "1.0",
   "name": "orb-ping",
   "display_name": "Orb Ping",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A peonping pack using sounds from Tools for Humanity's Orb.",
   "author": {
     "name": "Seán Olszewski",
@@ -19,6 +19,12 @@
     "session.end": {
       "sounds": [
         { "file": "sounds/sound_powering_down.wav", "label": "Powering down. Stay human." }
+      ]
+    },
+    "task.acknowledge": {
+      "sounds": [
+        { "file": "sounds/sound_user_qr_load_success.wav", "label": "Signal received." },
+        { "file": "sounds/sound_qr_code_capture.wav", "label": "Request acknowledged." }
       ]
     },
     "task.complete": {
@@ -46,9 +52,14 @@
         { "file": "sounds/sound_iris_scanning_loop_03B.wav", "label": "Finalizing biometric handshake..." }
       ]
     },
+    "resource.limit": {
+      "sounds": [
+        { "file": "sounds/sound_error.wav", "label": "Approaching resource limit." },
+        { "file": "sounds/sound_overheating.wav", "label": "Resource limit reached. Cooling required." }
+      ]
+    },
     "input.required": {
       "sounds": [
-        { "file": "sounds/sound_qr_code_capture.wav", "label": "Present your QR code." },
         { "file": "sounds/sound_start_idle.wav", "label": "Awaiting your gaze." },
         { "file": "sounds/sound_start_signup.wav", "label": "Step up to the Orb." }
       ]
